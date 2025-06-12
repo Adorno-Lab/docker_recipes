@@ -1,6 +1,7 @@
 ![GitHub License](https://img.shields.io/github/license/Adorno-Lab/docker_images)
 
 # docker_recipes
+<img src="https://github.com/user-attachments/assets/c37db192-9110-45ec-a7a8-51fc0c1d8cd2" alt="drawing" width="300"/>
 This repository contains Docker images for DQ Robotics, ROS2, and more.
 
 ## Docker Hub Instructions
