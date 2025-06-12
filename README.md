@@ -1,14 +1,14 @@
 ![GitHub License](https://img.shields.io/github/license/Adorno-Lab/docker_images)
 
-|Docker Containers | pulls |
-|----------------- |-------|
-|ubuntu_24_dqrobotics|![Docker Pulls](https://img.shields.io/docker/pulls/juanjqo/ubuntu_24_dqrobotics)|
-|ubuntu_24_dqrobotics_ros_jazzy|![Docker Pulls](https://img.shields.io/docker/pulls/juanjqo/ubuntu_24_dqrobotics_ros_jazzy)|
-
 # docker_recipes
 This repository contains Docker images for DQ Robotics, ROS2, and more.
 
 ## Docker Hub Instructions
+
+|Docker Containers | pulls |
+|----------------- |-------|
+|ubuntu_24_dqrobotics|![Docker Pulls](https://img.shields.io/docker/pulls/juanjqo/ubuntu_24_dqrobotics)|
+|ubuntu_24_dqrobotics_ros_jazzy|![Docker Pulls](https://img.shields.io/docker/pulls/juanjqo/ubuntu_24_dqrobotics_ros_jazzy)|
 
 ```shell
 docker pull juanjqo/ubuntu_24_dqrobotics
