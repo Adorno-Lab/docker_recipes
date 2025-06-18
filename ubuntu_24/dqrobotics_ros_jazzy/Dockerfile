@@ -9,9 +9,5 @@ ENV BASH_ENV="/etc/bash_env"
 RUN chmod +x ~/git/docker_recipes/dependencies/install_ros_jazzy.sh
 RUN bash -c '~/git/docker_recipes/dependencies/install_ros_jazzy.sh'
 
-# Install SAS
-RUN chmod +x ~/git/docker_recipes/dependencies/install_sas.sh
-RUN bash -c '~/git/docker_recipes/dependencies/install_sas.sh'
-
 # ROS DOMAIN SETUP
 RUN echo "export ROS_DOMAIN_ID=$ROS_DOMAIN_ID" >> ~/.bashrc 
