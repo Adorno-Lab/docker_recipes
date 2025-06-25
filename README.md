@@ -1,4 +1,4 @@
-![GitHub License](https://img.shields.io/github/license/Adorno-Lab/docker_images)![GitHub contributors](https://img.shields.io/github/contributors/Adorno-Lab/docker_recipes)
+![GitHub License](https://img.shields.io/github/license/Adorno-Lab/docker_images)![GitHub contributors](https://img.shields.io/github/contributors/Adorno-Lab/docker_recipes)[![publish](https://github.com/Adorno-Lab/docker_recipes/actions/workflows/docker-image.yml/badge.svg)](https://github.com/Adorno-Lab/docker_recipes/actions/workflows/docker-image.yml)
 
 
 # docker_recipes
