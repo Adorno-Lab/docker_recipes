@@ -1,4 +1,4 @@
-![GitHub License](https://img.shields.io/github/license/Adorno-Lab/docker_images)![GitHub contributors](https://img.shields.io/github/contributors/Adorno-Lab/docker_recipes)
+![GitHub License](https://img.shields.io/github/license/Adorno-Lab/docker_images)![GitHub contributors](https://img.shields.io/github/contributors/Adorno-Lab/docker_recipes)[![publish](https://github.com/Adorno-Lab/docker_recipes/actions/workflows/docker-image.yml/badge.svg)](https://github.com/Adorno-Lab/docker_recipes/actions/workflows/docker-image.yml)
 
 
 # docker_recipes
@@ -16,7 +16,7 @@ This repository contains Docker images for DQ Robotics, ROS2, and more.
 |ubuntu_24_dqrobotics_ros_jazzy_sas|![Static Badge](https://img.shields.io/badge/linux-amd64-orange)![Static Badge](https://img.shields.io/badge/arm64-blue)|![Docker Pulls](https://img.shields.io/docker/pulls/juanjqo/ubuntu_24_dqrobotics_ros_jazzy)| C) B + SAS |
 
 ```shell
-docker pull juanjqo/ubuntu_24_dqrobotics
+docker run juanjqo/ubuntu_24_dqrobotics
 ```
 
 ## Instructions for local tests
