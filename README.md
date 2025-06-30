@@ -31,5 +31,5 @@ docker build -t ubuntu_24_dqrobotics ubuntu_24/dqrobotics/
 ## Run
 
 ```shell
-sh run_container.sh ubuntu_24_dqrobotics
+sh run_container.sh ubuntu_24_dqrobotics ubuntu_24_dqrobotics
 ```
