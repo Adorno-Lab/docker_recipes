@@ -5,7 +5,8 @@ ENV BASH_ENV="/etc/bash_env"
 # Install dependencies for development
 RUN apt-get update && apt-get install -y net-tools iputils-ping \
 git nss-updatedb locate curl libpci3 vim nano terminator \
-cmake extra-cmake-modules g++  fakeroot software-properties-common 
+cmake extra-cmake-modules g++  fakeroot software-properties-common && apt-get clean && \
+rm -rf /var/lib/apt/lists/*
 
 # Clone docker_recipes
 RUN mkdir -p ~/git/
