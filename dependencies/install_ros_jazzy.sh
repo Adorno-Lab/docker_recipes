@@ -12,8 +12,10 @@ rm -rf /var/lib/apt/lists/*
 mkdir -p ~/ros2_ws/src
 
 # ALIASES
-echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
-echo "# Source the ROS2 overlay, as instructed in https://github.com/SmartArmStack/smart_arm_stack_ROS2" >> ~/.bashrc
-echo "alias cdros2='cd ~/ros2_ws/' " >> ~/.bashrc 
-echo "alias buildros2='cdros2 && colcon build && source install/setup.bash' " >> ~/.bashrc 
+echo "source /opt/ros/jazzy/setup.bash" >> /etc/bash_env
+echo "# Source the ROS2 overlay, as instructed in https://github.com/SmartArmStack/smart_arm_stack_ROS2" >> /etc/bash_env
+echo "alias cdros2='cd ~/ros2_ws/' " >> /etc/bash_env
+echo "alias buildros2='cdros2 && colcon build && source install/setup.bash' " >> /etc/bash_env
+
+echo "source /etc/bash_env" >> ~/.bashrc
 
