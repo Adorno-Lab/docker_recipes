@@ -16,5 +16,5 @@ fi
 
 xhost +local:root
 docker run -it --name=$1 \
---rm --privileged --network=host --env=DISPLAY \
+--rm --privileged --network=host --ipc=host --env=DISPLAY \
 $2 /bin/bash
