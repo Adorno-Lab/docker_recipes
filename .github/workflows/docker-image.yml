@@ -40,11 +40,11 @@ jobs:
               file: ubuntu_24/dqrobotics_ros_jazzy/Dockerfile
               tags: ${{ vars.DOCKER_USERNAME }}/ubuntu_24_dqrobotics_ros_jazzy
               
-          #- name: Build and push ubuntu_24_dqrobotics_ros_jazzy_sas 
-          #  uses: docker/build-push-action@v6
-          #  with:
-          #    # platforms: linux/amd64,linux/arm64
-          #    platforms: linux/amd64,linux/arm64
-          #    push: true
-          #    file: ubuntu_24/dqrobotics_ros_jazzy_sas/Dockerfile
-          #    tags: ${{ vars.DOCKER_USERNAME }}/ubuntu_24_dqrobotics_ros_jazzy_sas
+          - name: Build and push ros_jazzy_vicon
+            uses: docker/build-push-action@v6
+            with:
+              # platforms: linux/amd64,linux/arm64
+              platforms: linux/amd64
+              push: true
+              file: ubuntu_24/ros_jazzy_vicon/Dockerfile
+              tags: ${{ vars.DOCKER_USERNAME }}/ros_jazzy_vicon
