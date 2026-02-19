@@ -13,7 +13,7 @@ This image contains the SAS drivers for the B1 and Z1 platforms and is based on 
 Some features: 
 
 - The ROS2 workspace folder is located in /app/software/ROS2/ros2_ws/
-- The ROS_DOMAIND_ID is not defined. For instance,
+- The ROS_DOMAIND_ID is not defined. You are required to set it in your image. For instance:
 
 ```docker
 
@@ -27,4 +27,5 @@ RUN echo "export ROS_DOMAIN_ID=77" >> /etc/bash_env
 
 RUN echo "source /etc/bash_env" >> ~/.bashrc
 ```
+
 
