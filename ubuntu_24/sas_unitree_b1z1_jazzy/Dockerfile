@@ -10,6 +10,7 @@ RUN apt update && apt-get install ros-jazzy-sas-* -y
 
 
 
+
 ########################################################################################################
 # Create the folder /app if not present
 WORKDIR /app
@@ -51,8 +52,10 @@ RUN cp -r ~/git/rap2025_wholebodycontrol/software/ROS2/ros2_ws/src/sas_extended_
 
 # Clone the sas_unitree_b1z1_control_template and copy the EKF package and copy the sas_unitree_b1z1_control_template package
 #######################################################################################################
-RUN cd ~/git && git clone https://github.com/Adorno-Lab/sas_unitree_b1z1_control_template
-RUN cp -r ~/git/sas_unitree_b1z1_control_template /app/software/ROS2/ros2_ws/src
+#RUN cd ~/git && git clone https://github.com/Adorno-Lab/sas_unitree_b1z1_control_template
+#RUN cp -r ~/git/sas_unitree_b1z1_control_template /app/software/ROS2/ros2_ws/src
+
+
 
 
 ##########################################################################################
