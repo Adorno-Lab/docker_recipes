@@ -35,12 +35,6 @@ ENV LIBRARY_PATH="${LIBRARY_PATH}:/app/software/ROS2/ros2_ws/src/sas_robot_drive
 ##########################################################################################
 
 
-##########################################################################################
-# Install Unitree kinematics
-
-RUN cd ~/git && git clone https://github.com/Adorno-Lab/unitree_kinematics.git
-RUN cd ~/git/unitree_kinematics && mkdir -p build && cd build && cmake .. && make && make install
-
 
 # Create the git folder to clone github repositories if not present.
 #######################################################################################################
@@ -59,6 +53,13 @@ RUN cp -r ~/git/rap2025_wholebodycontrol/software/ROS2/ros2_ws/src/sas_extended_
 #######################################################################################################
 RUN cd ~/git && git clone https://github.com/Adorno-Lab/sas_unitree_b1z1_control_template
 RUN cp -r ~/git/sas_unitree_b1z1_control_template /app/software/ROS2/ros2_ws/src
+
+
+##########################################################################################
+# Install Unitree kinematics
+
+RUN cd ~/git && git clone https://github.com/Adorno-Lab/unitree_kinematics.git
+RUN cd ~/git/unitree_kinematics && mkdir -p build && cd build && cmake .. && make && make install
 
 
 
