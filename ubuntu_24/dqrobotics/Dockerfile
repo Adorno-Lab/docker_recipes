@@ -3,7 +3,7 @@ SHELL ["/bin/bash", "-c"]
 ENV BASH_ENV="/etc/bash_env"
 
 # Update apt-get
-RUN sudo apt-get update -q \
+RUN apt-get update -q \
     && sudo apt-get upgrade -y \
     && sudo apt-get autoremove -y \
     && apt-get clean \
