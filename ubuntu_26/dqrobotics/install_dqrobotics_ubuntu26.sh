@@ -19,7 +19,7 @@ make install
 ## C++
 add-apt-repository ppa:dqrobotics-dev/development
 apt-get update
-apt-get install -y libdqrobotics libdqrobotics-interface-json11 libdqrobotics-interface-qpoases
+apt-get install -y libdqrobotics libdqrobotics-interface-qpoases #libdqrobotics-interface-json11
 ## Python
 python3 -m pip install dqrobotics --pre --break-system-packages
 
