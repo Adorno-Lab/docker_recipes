@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Dependencies
-apt-get update && apt-get install -y git software-properties-common libeigen3-dev python3-pip cmake
+apt-get update
+apt-get install -y git software-properties-common libeigen3-dev python3-pip cmake
 
 # Install qpOASES
 mkdir -p ~/utils
@@ -26,3 +27,8 @@ python3 -m pip install dqrobotics --pre --break-system-packages
 # To prevent compilation errors with Pybind11
 ln -s /usr/include/eigen3/Eigen /usr/include/Eigen
 ldconfig
+
+# Clean apt
+apt-get autoremove -y
+apt-get clean
+rm -rf /var/lib/apt/lists/*
