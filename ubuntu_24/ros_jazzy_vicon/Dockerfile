@@ -7,7 +7,7 @@ ENV BASH_ENV="/etc/bash_env"
 
 # Clone motion_capture_tracking.git 
 RUN mkdir -p ~/ros2_ws/src
-RUN mkdir -p ~/git && cd ~/git && git clone -b ros2 https://github.com/juanjqo/motion_capture_tracking.git --recursive
+RUN mkdir -p ~/git && cd ~/git && git clone -b ros2 https://github.com/Adorno-Lab/motion_capture_tracking --recursive
 
 RUN cp -r ~/git/motion_capture_tracking ~/ros2_ws/src/ \
 && /bin/bash -c "source /opt/ros/jazzy/setup.bash; cd ~/ros2_ws/; colcon build && source install/setup.bash" 
