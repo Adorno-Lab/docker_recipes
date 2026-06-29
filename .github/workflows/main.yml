@@ -11,7 +11,7 @@ env:
   IMAGE_NAME: adorno-lab/ubuntu_26_lyx
   BUILDX_NO_DEFAULT_ATTESTATIONS: 1 # https://github.com/orgs/community/discussions/45969
   DOCKERFILE_CONTEXT: "."  
-  DOCKERFILE_PATH: "ubuntu_26_lyx/Dockerfile"  
+  DOCKERFILE_PATH: "ubuntu_26/ubuntu_26_lyx/Dockerfile"  
   DOCKERFILE_NAME: "Dockerfile"
   DOCKERFILE_TAG: "latest"
 
